@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form method="post" id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required/></label>
+        <label id="number-label">Age(optional)<input id="number" type="number" min="13" max="120" placeholder="Age"/></label>
+      </fieldset>
+      <fieldset>
+        <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option>Student</option>
+            <option>Full-time Job</option>
+            <option>Full-time Learner</option>
+          </select>
+        </label>
+          Would you recommend freeCodeCamp to a friend?
+          <label><input type="radio" name="recommend" value="Definitely" class="inline">Definitely</label>
+          <label><input type="radio" name="recommend" value="Maybe" class="inline">Maybe</label>
+          <label><input type="radio" name="recommend" value="Not sure" class="inline">Not sure</label>
+      </fieldset>
+      <fieldset>
+        What is your favorite feature of freeCodeCamp?
+        <label> <input type="checkbox" value="option1" class="inline"/>Option 1</label>
+        <label><input type="checkbox" value="option2" class="inline"/>Option 2</label>
+        <label><input type="checkbox" value="option3" class="inline"/>Option 3</label>
+        <label><input type="checkbox" value="option4" class="inline"/>Option 4</label>
+        <label><input type="checkbox" value="option5" class="inline"/>Option 5</label>
+        <label>Any comments?<textarea placeholder="Enter your comments here..." rows="5"></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit"/>
+    </form>
+  </body>
+</html>
+
